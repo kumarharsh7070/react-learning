@@ -29,6 +29,7 @@ function App() {
 
   // Copy to clipboard
   const copyToClipboard = () => {
+    passwordRef.current?.select();
     navigator.clipboard.writeText(password);
     alert("Password copied!");
   };
